@@ -28,8 +28,11 @@ COPY . .
 RUN curl -sS https://getcomposer.org/download/2.4.4/composer.phar -o /usr/local/bin/composer && \
     chmod +x /usr/local/bin/composer
 
-# Instala dependencias (incluyendo dev para evitar error del MakerBundle)
-RUN composer install --optimize-autoloader
+# Instala dependencias sin ejecutar scripts para evitar error Kernel
+RUN composer install --no-scripts --optimize-autoloader --no-interaction
+
+# (Opcional) Ejecutar scripts manualmente si todo está correcto
+# RUN composer run-script @auto-scripts || true
 
 # Crear directorios si no existen y asignar permisos
 RUN mkdir -p var/cache var/log var/sessions && \
