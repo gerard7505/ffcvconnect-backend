@@ -1,0 +1,8 @@
+[phases.setup]
+commands = ["composer install --no-interaction --optimize-autoloader"]
+
+[phases.build]
+commands = ["php bin/console cache:warmup --env=prod"]
+
+[phases.start]
+commands = ["php -S 0.0.0.0:8080 -t public"]
