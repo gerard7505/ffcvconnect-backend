@@ -1,1 +1,1 @@
-web: php -S 0.0.0.0:$PORT -t public
+web: docker build -t app . && docker run -p 80:80 app
