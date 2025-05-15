@@ -1,0 +1,12 @@
+nelmio_cors:
+    defaults:
+        allow_credentials: false       # o true si necesitas cookies/token en credenciales
+        max_age:           3600
+        headers:           ['Content-Type', 'Authorization']
+        methods:           ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+    paths:
+        '^/api/':                       # aplica a todas las rutas /api/*
+            origins:      ['https://ffcvconnect.infinityfreeapp.com']
+            allow_headers: ['Content-Type', 'Authorization']
+            allow_methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+            max_age:       3600

@@ -1,0 +1,25 @@
+# config/packages/doctrine.yaml
+doctrine:
+    dbal:
+        # Conexión a la base de datos via env var
+        url: '%env(resolve:DATABASE_URL)%'
+        profiling_collect_backtrace: '%kernel.debug%'
+        use_savepoints: true
+
+    orm:
+        auto_generate_proxy_classes: '%kernel.debug%'
+        enable_lazy_ghost_objects: true
+        report_fields_where_declared: true
+        validate_xml_mapping: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+
+        # Desactivamos el auto_mapping global para controlar sólo nuestro propio mapeo
+        auto_mapping: false
+
+        mappings:
+            App:
+                is_bundle: false
+                type: attribute       # <-- Usamos atributos PHP 8 en lugar de anotaciones
+                dir: '%kernel.project_dir%/src/Entity'
+                prefix: 'App\Entity'
+                alias: App
