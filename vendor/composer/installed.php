@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'gerard7505/ffcvconnect',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => '16685924771e1a4351d91e393b10d17a230601f9',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'd9f10567cc3baaae2f46c028d71fe07a6eb0348a',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -290,9 +290,9 @@
             'dev_requirement' => false,
         ),
         'gerard7505/ffcvconnect' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '16685924771e1a4351d91e393b10d17a230601f9',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'd9f10567cc3baaae2f46c028d71fe07a6eb0348a',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

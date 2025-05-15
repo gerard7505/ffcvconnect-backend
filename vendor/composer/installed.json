@@ -258,7 +258,7 @@
             },
             "time": "2024-09-05T10:17:24+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
@@ -334,7 +334,7 @@
             },
             "time": "2022-05-20T20:07:39+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
@@ -428,7 +428,7 @@
             },
             "time": "2025-03-22T10:17:19+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Collections\\": "src"
@@ -532,7 +532,7 @@
                 "bin/doctrine-dbal"
             ],
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\DBAL\\": "src"
@@ -722,7 +722,7 @@
             },
             "time": "2025-03-22T17:28:21+00:00",
             "type": "symfony-bundle",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Bundle\\DoctrineBundle\\": "src"
@@ -895,7 +895,7 @@
             },
             "time": "2024-05-22T20:47:39+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\": "src"
@@ -988,7 +988,7 @@
             },
             "time": "2024-02-18T20:23:39+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Inflector\\": "lib/Doctrine/Inflector"
@@ -1084,7 +1084,7 @@
             },
             "time": "2022-12-30T00:23:10+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
@@ -1154,7 +1154,7 @@
             },
             "time": "2024-02-05T11:56:58+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Lexer\\": "src"
@@ -1262,7 +1262,7 @@
                 "bin/doctrine-migrations"
             ],
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Migrations\\": "src"
@@ -1439,7 +1439,7 @@
             },
             "time": "2024-11-01T21:49:07+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Persistence\\": "src/Persistence"
@@ -1533,7 +1533,7 @@
                 "bin/sql-formatter"
             ],
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\SqlFormatter\\": "src"
@@ -1596,7 +1596,7 @@
                     "dev-master": "4.0.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Egulias\\EmailValidator\\": "src"
@@ -1826,7 +1826,7 @@
             },
             "time": "2024-04-27T15:46:45+00:00",
             "type": "symfony-bundle",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Lexik\\Bundle\\JWTAuthenticationBundle\\": ""
@@ -1923,7 +1923,7 @@
             },
             "time": "2023-07-31T13:36:50+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "files": [
                     "src/pinky.php"
@@ -1988,7 +1988,7 @@
             },
             "time": "2016-12-05T07:27:31+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Namshi\\JOSE\\": "src/Namshi/JOSE/"
@@ -2053,7 +2053,7 @@
                     "dev-master": "2.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Nelmio\\CorsBundle\\": ""
@@ -2123,7 +2123,7 @@
                     "dev-master": "5.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "PhpParser\\": "lib/PhpParser"
@@ -2174,7 +2174,7 @@
                     "dev-2.x": "2.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "phpDocumentor\\Reflection\\": "src/"
@@ -2310,7 +2310,7 @@
                     "dev-1.x": "1.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "phpDocumentor\\Reflection\\": "src"
@@ -2364,7 +2364,7 @@
             },
             "time": "2025-02-19T13:28:12+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "PHPStan\\PhpDocParser\\": [
@@ -2408,7 +2408,7 @@
                     "dev-master": "1.0.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Psr\\Cache\\": "src/"
@@ -2455,7 +2455,7 @@
             },
             "time": "2022-11-25T14:36:26+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Psr\\Clock\\": "src/"
@@ -2511,7 +2511,7 @@
                     "dev-master": "2.0.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Psr\\Container\\": "src/"
@@ -2567,7 +2567,7 @@
                     "dev-master": "1.0.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Psr\\EventDispatcher\\": "src/"
@@ -2623,7 +2623,7 @@
                     "dev-master": "2.0.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Psr\\Link\\": "src/"
@@ -2679,7 +2679,7 @@
                     "dev-master": "3.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Psr\\Log\\": "src"
@@ -2735,7 +2735,7 @@
             },
             "time": "2024-10-25T15:07:50+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Asset\\": ""
@@ -2908,7 +2908,7 @@
                     "dev-main": "3.5-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Contracts\\Cache\\": ""
@@ -2982,7 +2982,7 @@
             },
             "time": "2024-09-25T14:18:03+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "files": [
                     "Resources/now.php"
@@ -3068,7 +3068,7 @@
             },
             "time": "2024-11-04T11:33:53+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Config\\": ""
@@ -3229,7 +3229,7 @@
             },
             "time": "2024-09-25T14:18:03+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\CssSelector\\": ""
@@ -3310,7 +3310,7 @@
             },
             "time": "2024-09-25T14:18:03+00:00",
             "type": "symfony-bundle",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Bundle\\DebugBundle\\": ""
@@ -3394,7 +3394,7 @@
             },
             "time": "2025-03-13T09:55:08+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\DependencyInjection\\": ""
@@ -3467,7 +3467,7 @@
                     "dev-main": "3.5-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "files": [
                     "function.php"
@@ -3647,7 +3647,7 @@
             },
             "time": "2024-11-27T11:08:19+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Dotenv\\": ""
@@ -3730,7 +3730,7 @@
                 "Resources/bin/patch-type-declarations"
             ],
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\ErrorHandler\\": ""
@@ -3813,7 +3813,7 @@
             },
             "time": "2024-09-25T14:18:03+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\EventDispatcher\\": ""
@@ -3887,7 +3887,7 @@
                     "dev-main": "3.5-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Contracts\\EventDispatcher\\": ""
@@ -3959,7 +3959,7 @@
             },
             "time": "2024-10-09T08:40:40+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\ExpressionLanguage\\": ""
@@ -4028,7 +4028,7 @@
             },
             "time": "2024-10-25T15:07:50+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Filesystem\\": ""
@@ -4095,7 +4095,7 @@
             },
             "time": "2024-12-29T13:51:37+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Finder\\": ""
@@ -4946,7 +4946,7 @@
             },
             "time": "2024-11-20T10:57:02+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\OptionsResolver\\": ""
@@ -5022,7 +5022,7 @@
             },
             "time": "2024-09-25T14:18:03+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\PasswordHasher\\": ""
@@ -5822,7 +5822,7 @@
             },
             "time": "2025-03-10T17:11:00+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Process\\": ""
@@ -5891,7 +5891,7 @@
             },
             "time": "2024-12-16T14:42:05+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\PropertyAccess\\": ""
@@ -5983,7 +5983,7 @@
             },
             "time": "2025-01-21T10:52:27+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\PropertyInfo\\": ""
@@ -6071,7 +6071,7 @@
             },
             "time": "2025-01-09T08:51:02+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Routing\\": ""
@@ -6155,7 +6155,7 @@
             "extra": {
                 "class": "Symfony\\Component\\Runtime\\Internal\\ComposerPlugin"
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Runtime\\": "",
@@ -6434,7 +6434,7 @@
             },
             "time": "2024-09-25T14:18:03+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Security\\Csrf\\": ""
@@ -6704,7 +6704,7 @@
                     "dev-main": "3.5-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Contracts\\Service\\": ""
@@ -6777,7 +6777,7 @@
             },
             "time": "2025-02-21T10:06:30+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Stopwatch\\": ""
@@ -6939,7 +6939,7 @@
                     "dev-main": "3.5-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Contracts\\Translation\\": ""
@@ -7146,7 +7146,7 @@
             },
             "time": "2024-09-25T14:18:03+00:00",
             "type": "symfony-bundle",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Bundle\\TwigBundle\\": ""
@@ -7214,7 +7214,7 @@
             },
             "time": "2024-09-25T14:18:03+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Uid\\": ""
@@ -7565,7 +7565,7 @@
             },
             "time": "2024-09-25T14:18:03+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\WebLink\\": ""
@@ -7659,7 +7659,7 @@
             },
             "time": "2025-02-14T12:21:59+00:00",
             "type": "symfony-bundle",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Bundle\\WebProfilerBundle\\": ""
@@ -7814,7 +7814,7 @@
                     "dev-master": "2.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "TijsVerkoyen\\CssToInlineStyles\\": "src"
@@ -8251,7 +8251,7 @@
                     "dev-master": "1.10-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Webmozart\\Assert\\": "src/"
@@ -8307,7 +8307,7 @@
                     "dev-master": "3.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Negotiation\\": "src/Negotiation"
