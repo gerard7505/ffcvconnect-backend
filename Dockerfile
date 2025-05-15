@@ -24,32 +24,28 @@ RUN a2enmod rewrite
 # 4) Directorio de trabajo
 WORKDIR /var/www/html
 
-# 5) Copiar ficheros de dependencias PHP y frontend
-COPY composer.json composer.lock ./
-COPY frontend/package*.json ./frontend/
+# 5) Copiar primero TODO el código (no solo composer.json)
+COPY . .
 
 # 6) Instalar Composer
 RUN curl -sS https://getcomposer.org/download/2.4.4/composer.phar -o /usr/local/bin/composer \
  && chmod +x /usr/local/bin/composer
 
-# 7) Instalar dependencias PHP
+# 7) Instalar dependencias PHP (ahora que el código y bin/console ya están)
 RUN composer install --no-interaction --optimize-autoloader
 
 # 8) Instalar dependencias JS y compilar frontend
 WORKDIR /var/www/html/frontend
 RUN npm install && npm run build
 
-# 9) Copiar el resto del código (incluye frontend con dist ya creado)
+# 9) Volver al root y mover frontend build a public
 WORKDIR /var/www/html
-COPY . .
-
-# 10) Mover build frontend a public
 RUN cp -R frontend/dist/* public/
 
-# 11) Permisos para cache, logs y sesiones
+# 10) Permisos para cache, logs y sesiones
 RUN mkdir -p var/cache var/log var/sessions \
  && chown -R www-data:www-data var/cache var/log var/sessions
 
-# 12) Exponer puerto 80 y arrancar Apache
+# 11) Exponer puerto 80 y arrancar Apache
 EXPOSE 80
 CMD ["apache2-foreground"]
