@@ -11,8 +11,9 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libxslt-dev
 
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg && \
-    docker-php-ext-install gd pdo pdo_mysql pdo_pgsql opcache xsl
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install gd pdo pdo_mysql pdo_pgsql opcache xsl \
+    && docker-php-ext-enable pdo_mysql pdo_pgsql
 
 RUN a2enmod rewrite
 
@@ -23,15 +24,15 @@ RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|' /et
 RUN echo '<Directory /var/www/html/public>\n\
     AllowOverride All\n\
     Require all granted\n\
-</Directory>' > /etc/apache2/conf-available/symfony.conf && \
-    a2enconf symfony
+</Directory>' > /etc/apache2/conf-available/symfony.conf \
+    && a2enconf symfony
 
 WORKDIR /var/www/html
 
 COPY . .
 
-RUN curl -sS https://getcomposer.org/download/2.4.4/composer.phar -o /usr/local/bin/composer && \
-    chmod +x /usr/local/bin/composer
+RUN curl -sS https://getcomposer.org/download/2.4.4/composer.phar -o /usr/local/bin/composer \
+    && chmod +x /usr/local/bin/composer
 
 RUN composer install --no-scripts --optimize-autoloader --no-interaction
 
