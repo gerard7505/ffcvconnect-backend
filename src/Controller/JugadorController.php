@@ -10,7 +10,8 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
-require_once 'config/db.php';
+require_once __DIR__ . '/../../config/db.php';
+
 
 // Ahora usas $pdo para tus queries
 $stmt = $pdo->query('SELECT * FROM _jugador');
