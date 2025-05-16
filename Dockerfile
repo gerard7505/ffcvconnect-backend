@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
+    libpq-dev \
     git \
     unzip \
     curl \
@@ -11,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     libxslt-dev
 
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg && \
-    docker-php-ext-install gd pdo pdo_mysql opcache xsl
+    docker-php-ext-install gd pdo pdo_mysql pdo_pgsql opcache xsl
 
 RUN a2enmod rewrite
 
@@ -39,4 +40,3 @@ RUN mkdir -p var/cache var/log var/sessions && chown -R www-data:www-data var
 EXPOSE 80
 
 CMD ["apache2-foreground"]
-
