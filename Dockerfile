@@ -1,45 +1,32 @@
 FROM php:8.2-apache
 
-# Dependencias del sistema
+# Instala dependencias del sistema y PHP
 RUN apt-get update && apt-get install -y \
-    libpng-dev \
-    libjpeg-dev \
-    libfreetype6-dev \
-    git \
-    unzip \
-    curl \
-    libxml2-dev \
-    libxslt-dev
+    libpng-dev libjpeg-dev libfreetype6-dev git unzip curl libxml2-dev libxslt-dev \
+ && docker-php-ext-configure gd --with-freetype --with-jpeg \
+ && docker-php-ext-install gd pdo pdo_mysql opcache xsl
 
-# Extensiones de PHP
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg && \
-    docker-php-ext-install gd pdo pdo_mysql opcache xsl
-
-# Habilita mod_rewrite de Apache
+# Habilita mod_rewrite
 RUN a2enmod rewrite
 
-# Directorio de trabajo
-WORKDIR /var/www/html
+# Cambia DocumentRoot a public/
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
 
-# Copia archivos del proyecto
-COPY . .
+# Copia el proyecto
+COPY . /var/www/html
 
 # Instala Composer
-RUN curl -sS https://getcomposer.org/download/2.4.4/composer.phar -o /usr/local/bin/composer && \
-    chmod +x /usr/local/bin/composer
+RUN curl -sS https://getcomposer.org/installer | php && \
+    mv composer.phar /usr/local/bin/composer
 
-# Instala dependencias sin ejecutar scripts para evitar error Kernel
-RUN composer install --no-scripts --optimize-autoloader --no-interaction
+# Instala dependencias de Symfony (modo producción)
+WORKDIR /var/www/html
+RUN composer install --no-dev --optimize-autoloader
 
-# (Opcional) Ejecutar scripts manualmente si todo está correcto
-# RUN composer run-script @auto-scripts || true
-
-# Crear directorios si no existen y asignar permisos
+# Asigna permisos a carpetas necesarias
 RUN mkdir -p var/cache var/log var/sessions && \
-    chown -R www-data:www-data var/cache var/log var/sessions
+    chown -R www-data:www-data var
 
-# Exponer puerto
 EXPOSE 80
-
-# Comando final
 CMD ["apache2-foreground"]
+
